@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
-  resolve: { extensions: [".js"] },
   module: {
     rules: [
       {
@@ -14,6 +13,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "images"
+        }
       }
     ]
   },
