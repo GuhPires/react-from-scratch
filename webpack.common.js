@@ -19,6 +19,13 @@ module.exports = {
           name: "[name].[ext]",
           outputPath: "images"
         }
+      },
+      {
+        test: /\.ico$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+        }
       }
     ]
   },

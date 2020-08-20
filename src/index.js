@@ -2,6 +2,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './home';
 import image from '../public/images/Image.png';
+import '../public/favicon.ico';
 
 import './main.css';
 
@@ -13,4 +14,4 @@ const App = () => (
   </StrictMode>
 );
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app')); 
