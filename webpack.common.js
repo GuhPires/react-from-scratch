@@ -2,17 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js"
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
