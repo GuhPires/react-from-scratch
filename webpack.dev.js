@@ -17,8 +17,11 @@ module.exports = merge(common, {
     ]
   },
   devServer: {
+    stats: "errors-only",
     hot: true,
     compress: true,
-    port: 3000
+    port: 3000,
+    open: true,
+    overlay: true
   }
 });
