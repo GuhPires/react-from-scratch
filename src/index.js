@@ -14,4 +14,4 @@ const App = () => (
   </StrictMode>
 );
 
-ReactDOM.render(<App />, document.getElementById('app')); 
+ReactDOM.render(<App />, document.getElementById('app'));

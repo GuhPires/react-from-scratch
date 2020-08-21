@@ -1,3 +1,9 @@
+/**
+ * 
+ * Common webpack configuration for all files
+ * 
+ */
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
